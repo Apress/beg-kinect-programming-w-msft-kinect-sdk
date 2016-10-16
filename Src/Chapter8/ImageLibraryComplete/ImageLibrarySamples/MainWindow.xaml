@@ -1,0 +1,13 @@
+﻿<Window x:Class="ImageLibrarySamples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Image Library Samples" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Name="rgbImage" Stretch="Uniform" Grid.Column="0"/>
+        <Image Name="depthImage" Stretch="Uniform" Grid.Column="1"/>
+    </Grid>
+</Window>

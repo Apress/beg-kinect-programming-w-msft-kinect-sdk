@@ -1,0 +1,58 @@
+﻿<Window x:Class="BeginningKinect.Chapter5.DeepUITargets.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        
+        Title="Deep UI Targets"          
+        WindowState="Maximized" 
+        Background="White">
+
+    <Window.Resources>
+        <Style x:Key="TargetLabel" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+    </Window.Resources>
+
+
+    <Viewbox>
+        <Grid x:Name="LayoutRoot" Width="1280" Height="960">
+            <Image x:Name="DepthImage"/>
+
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock x:Name="DebugLeftHand" Style="{StaticResource TargetLabel}" Foreground="Black"/>
+                <TextBlock x:Name="DebugRightHand" Style="{StaticResource TargetLabel}" Foreground="Black"/>
+            </StackPanel>
+
+            <Canvas>
+                <Ellipse x:Name="Box3" Fill="Orange" Height="200" Width="200" Canvas.Left="776" Canvas.Top="162" Canvas.ZIndex="900"/>
+                <TextBlock Text="3" Canvas.Left="860" Canvas.Top="206" Panel.ZIndex="900" Style="{StaticResource TargetLabel}"/>
+
+                <Ellipse x:Name="Target4" Fill="Purple" Height="150" Width="150" Canvas.Left="732" Canvas.Top="320" Canvas.ZIndex="800"/>
+                <TextBlock Text="4" Canvas.Left="840" Canvas.Top="372" Panel.ZIndex="800" Style="{StaticResource TargetLabel}"/>
+
+                <Ellipse x:Name="Target5" Fill="Green" Height="120" Width="120" Canvas.Left="880" Canvas.Top="592" Canvas.ZIndex="700"/>
+                <TextBlock Text="5" Canvas.Left="908" Canvas.Top="590" Panel.ZIndex="700" Style="{StaticResource TargetLabel}"/>
+
+                <Ellipse x:Name="Target6" Fill="Blue" Height="100" Width="100" Canvas.Left="352" Canvas.Top="544" Canvas.ZIndex="600"/>
+                <TextBlock Text="6" Canvas.Left="368" Canvas.Top="582" Panel.ZIndex="600"  Style="{StaticResource TargetLabel}"/>
+
+                <Ellipse x:Name="Target7" Fill="Red" Height="85" Width="85" Canvas.Left="378" Canvas.Top="192" Canvas.ZIndex="500"/>
+                <TextBlock Text="7" Canvas.Left="422" Canvas.Top="226" Panel.ZIndex="500" Style="{StaticResource TargetLabel}"/>
+
+
+                <Image x:Name="LeftHandElement" Source="Images/hand.png" Width="80" Height="80" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <ScaleTransform x:Name="LeftHandScaleTransform" ScaleY="1" ScaleX="-1"/>
+                    </Image.RenderTransform>
+                </Image>
+
+                <Image x:Name="RightHandElement" Source="Images/hand.png" Width="80" Height="80" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>                        
+                        <ScaleTransform x:Name="RightHandScaleTransform" ScaleY="1" ScaleX="1"/>
+                    </Image.RenderTransform>
+                </Image>
+            </Canvas>
+        </Grid>
+    </Viewbox>
+</Window>

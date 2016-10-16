@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepUITargets", "DeepUITargets\DeepUITargets.csproj", "{C1744268-86B2-4A9D-9699-0DD063CE8AF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimonSays", "SimonSays\SimonSays.csproj", "{A9581C3E-51F7-4567-9443-4C08D0C59935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimonSaysPoses", "SimonSaysPoses\SimonSaysPoses.csproj", "{E968CA07-A13D-4470-9968-3A4758F751EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1744268-86B2-4A9D-9699-0DD063CE8AF3}.Debug|x86.ActiveCfg = Debug|x86
+		{C1744268-86B2-4A9D-9699-0DD063CE8AF3}.Debug|x86.Build.0 = Debug|x86
+		{C1744268-86B2-4A9D-9699-0DD063CE8AF3}.Release|x86.ActiveCfg = Release|x86
+		{C1744268-86B2-4A9D-9699-0DD063CE8AF3}.Release|x86.Build.0 = Release|x86
+		{A9581C3E-51F7-4567-9443-4C08D0C59935}.Debug|x86.ActiveCfg = Debug|x86
+		{A9581C3E-51F7-4567-9443-4C08D0C59935}.Debug|x86.Build.0 = Debug|x86
+		{A9581C3E-51F7-4567-9443-4C08D0C59935}.Release|x86.ActiveCfg = Release|x86
+		{A9581C3E-51F7-4567-9443-4C08D0C59935}.Release|x86.Build.0 = Release|x86
+		{E968CA07-A13D-4470-9968-3A4758F751EE}.Debug|x86.ActiveCfg = Debug|x86
+		{E968CA07-A13D-4470-9968-3A4758F751EE}.Debug|x86.Build.0 = Debug|x86
+		{E968CA07-A13D-4470-9968-3A4758F751EE}.Release|x86.ActiveCfg = Release|x86
+		{E968CA07-A13D-4470-9968-3A4758F751EE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

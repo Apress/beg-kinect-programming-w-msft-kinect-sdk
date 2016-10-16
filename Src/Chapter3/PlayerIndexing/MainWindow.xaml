@@ -1,0 +1,13 @@
+﻿<Window x:Class="BeginningKinect.Chapter3.PlayerIndexing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Title="MainWindow" Height="600" Width="1200">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="RawDepthImage" Margin="0,0,10,0" Width="640" Height="480"/>
+            <Image x:Name="EnhDepthImage" Width="640" Height="480"/>
+        </StackPanel>            
+
+        <TextBlock x:Name="FramesPerSecondElement" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="24"/>
+    </Grid>
+</Window>

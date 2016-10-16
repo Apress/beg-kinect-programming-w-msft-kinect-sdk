@@ -1,0 +1,31 @@
+﻿<Window x:Class="BeginningKinect.Chapter2.ApplicationFundamentals.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="480" Width="640">
+    <Grid>
+        <StackPanel>            
+            <Image x:Name="ColorImageElement"/>
+        </StackPanel>
+
+        <Border Padding="10" Background="#5F000000" HorizontalAlignment="Left" VerticalAlignment="Top" MinWidth="220">
+            <StackPanel TextBlock.Foreground="White">
+                <TextBlock x:Name="StatusElement"/>
+
+                <Button Content="Start Kinect" Click="StartButton_Click"/>
+                <Button Content="Stop Kinect" Click="StopButton_Click"/>
+                <Button Content="Take Picture" Click="TakePictureButton_Click"/>
+
+                <StackPanel Margin="0,10,0,0">
+                    <TextBlock Text="Image Treatment:"/>
+                    <ComboBox x:Name="ImageTreatmentSelector" SelectedIndex="0">
+                        <TextBlock Text="Simple (Listing 2-4)" Tag="1"/>
+                        <TextBlock Text="Better Performance (Listing 2-5)" Tag="2"/>
+                        <TextBlock Text="Red" Tag="3"/>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
+
+    

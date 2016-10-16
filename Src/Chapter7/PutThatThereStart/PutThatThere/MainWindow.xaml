@@ -1,0 +1,14 @@
+﻿<Window x:Class="PutThatThere.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:PutThatThere"
+        Title="Put That There"  Background="Black">
+    <Viewbox>
+        <Canvas x:Name="MainStage" Height="1080" Width="1920" Background="Black" VerticalAlignment="Bottom">
+            <local:CrossHairs Canvas.Top="{Binding HandTop}" Canvas.Left="{Binding HandLeft}" />
+          
+                <Label  Foreground="White"  Content="{Binding HypothesizedText}" Height="55"   FontSize="32" Width="965"  Canvas.Left="115" Canvas.Top="1025" />
+            <Label Foreground="Green" Content="{Binding Confidence}" Height="55"  Width="114" FontSize="32" Canvas.Left="0" Canvas.Top="1025"  />
+        </Canvas>
+    </Viewbox>
+</Window>

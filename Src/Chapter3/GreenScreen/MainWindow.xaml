@@ -1,0 +1,9 @@
+﻿<Window x:Class="BeginningKinect.Chapter3.GreenScreen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" >
+    <Grid>
+        <Image Source="/WineCountry.JPG" />
+        <Image x:Name="GreenScreenImage"/>       
+    </Grid>
+</Window>

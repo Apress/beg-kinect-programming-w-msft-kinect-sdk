@@ -1,0 +1,42 @@
+﻿<Window x:Class="BeginningKinect.Chapter3.TakingMeasure.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Title="MainWindow" Height="800" Width="1200">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="DepthImage"/>
+
+            <Border Padding="10" Background="#5F000000" HorizontalAlignment="Left" VerticalAlignment="Top" MinWidth="280" TextBlock.Foreground="White">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="FPS: " Margin="0,0,5,0"/>
+                        <TextBlock x:Name="FramesPerSecondElement"/>
+                    </StackPanel>
+
+                    <ItemsControl x:Name="PlayerDepthData" Width="300" TextElement.FontSize="20">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border  Background="#AF000000" Padding="5" Margin="0,10">
+                                    <StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="PlayerId:"/>
+                                            <TextBlock Text="{Binding Path=PlayerId}"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="Width:"/>
+                                            <TextBlock Text="{Binding Path=RealWidth}"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="Height:"/>
+                                            <TextBlock Text="{Binding Path=RealHeight}"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>                
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>

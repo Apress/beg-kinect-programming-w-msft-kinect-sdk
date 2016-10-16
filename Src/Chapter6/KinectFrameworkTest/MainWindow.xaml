@@ -1,0 +1,11 @@
+﻿<Window x:Class="KinectFrameworkTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800" xmlns:my="clr-namespace:Beginning.Kinect.Framework.Controls;assembly=Beginning.Kinect.Framework">
+    <Grid Background="#FFBE8383">
+        <my:KinectButton Content="Kinect Button" Height="130" Width="130"  HorizontalAlignment="Left" Margin="576,51,0,0" Name="kinectButton1" VerticalAlignment="Top" Click="Button_Click" Background="Red" KinectCursorLeave="Button_KinectCursorLeave" />
+        <my:HoverButton Content="Hover Button" Height="130" Width="130" HorizontalAlignment="Left" Margin="576,227,0,0"  Name="hoverButton1" VerticalAlignment="Top" Click="Button_Click" Background="Red" KinectCursorLeave="Button_KinectCursorLeave"/>
+        <my:MagnetButton Content="Magnet Button" Height="130" Width="130" HorizontalAlignment="Left" Margin="576,395,0,0" Name="magnetButton1" VerticalAlignment="Top" Click="Button_Click" Background="Red" KinectCursorLeave="Button_KinectCursorLeave" />
+        <ListBox Height="306" HorizontalAlignment="Left" Margin="46,51,0,0" Name="listBox1" VerticalAlignment="Top" Width="296" />
+    </Grid>
+</Window>

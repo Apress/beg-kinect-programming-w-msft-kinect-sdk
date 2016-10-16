@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthImage", "DepthImage\DepthImage.csproj", "{9BF57745-DB03-4E21-A408-78033165647A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthHistograms", "DepthHistograms\DepthHistograms.csproj", "{FC934151-1E16-4DFD-BF71-5C64F176D6DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerIndexing", "PlayerIndexing\PlayerIndexing.csproj", "{EC6B51A4-F96D-4895-B454-4EDFAC6A155E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakingMeasure", "TakingMeasure\TakingMeasure.csproj", "{E75F2697-43FF-4D38-AE36-F840FA4FA02C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenScreen", "GreenScreen\GreenScreen.csproj", "{2F0EF7E3-AB88-450A-A9EF-6B7388703415}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BF57745-DB03-4E21-A408-78033165647A}.Debug|x86.ActiveCfg = Debug|x86
+		{9BF57745-DB03-4E21-A408-78033165647A}.Debug|x86.Build.0 = Debug|x86
+		{9BF57745-DB03-4E21-A408-78033165647A}.Release|x86.ActiveCfg = Release|x86
+		{9BF57745-DB03-4E21-A408-78033165647A}.Release|x86.Build.0 = Release|x86
+		{FC934151-1E16-4DFD-BF71-5C64F176D6DA}.Debug|x86.ActiveCfg = Debug|x86
+		{FC934151-1E16-4DFD-BF71-5C64F176D6DA}.Debug|x86.Build.0 = Debug|x86
+		{FC934151-1E16-4DFD-BF71-5C64F176D6DA}.Release|x86.ActiveCfg = Release|x86
+		{FC934151-1E16-4DFD-BF71-5C64F176D6DA}.Release|x86.Build.0 = Release|x86
+		{EC6B51A4-F96D-4895-B454-4EDFAC6A155E}.Debug|x86.ActiveCfg = Debug|x86
+		{EC6B51A4-F96D-4895-B454-4EDFAC6A155E}.Debug|x86.Build.0 = Debug|x86
+		{EC6B51A4-F96D-4895-B454-4EDFAC6A155E}.Release|x86.ActiveCfg = Release|x86
+		{EC6B51A4-F96D-4895-B454-4EDFAC6A155E}.Release|x86.Build.0 = Release|x86
+		{E75F2697-43FF-4D38-AE36-F840FA4FA02C}.Debug|x86.ActiveCfg = Debug|x86
+		{E75F2697-43FF-4D38-AE36-F840FA4FA02C}.Debug|x86.Build.0 = Debug|x86
+		{E75F2697-43FF-4D38-AE36-F840FA4FA02C}.Release|x86.ActiveCfg = Release|x86
+		{E75F2697-43FF-4D38-AE36-F840FA4FA02C}.Release|x86.Build.0 = Release|x86
+		{2F0EF7E3-AB88-450A-A9EF-6B7388703415}.Debug|x86.ActiveCfg = Debug|x86
+		{2F0EF7E3-AB88-450A-A9EF-6B7388703415}.Debug|x86.Build.0 = Debug|x86
+		{2F0EF7E3-AB88-450A-A9EF-6B7388703415}.Release|x86.ActiveCfg = Release|x86
+		{2F0EF7E3-AB88-450A-A9EF-6B7388703415}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
